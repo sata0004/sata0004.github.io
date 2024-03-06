@@ -88,13 +88,18 @@ width: 100%;
 li{
  display: inline-block;
  padding: 5px 115px;
- border-right: 1px solid #000000;
 
+
+}
+
+li.dot{
+    display: inline-block;
+    padding: 5px 115px;
+    border-right: 1px solid #000000;
 }
 a{
     text-decoration: none;
     text-transform: uppercase;
-    color: #000;
 }
 .navigation li:last-child {
     border: none;
@@ -119,7 +124,7 @@ a{
 }
 .facts{
     margin: 15px 0px 0px 26px;
-    list-style-type: disc;
+  text-decoration: dotted;
     line-height: 17px;
 }
 .contact{
