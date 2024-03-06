@@ -32,7 +32,7 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+	/* list-style: none; */
 }
 blockquote, q {
 	quotes: none;
@@ -85,25 +85,22 @@ width: 100%;
     top: 200px;
     left: 585px;
 }
-li{
- display: inline-block;
- padding: 5px 115px;
 
-
-}
 
 li.dot{
     display: inline-block;
+    text-decoration: dotted;
     padding: 5px 115px;
     border-right: 1px solid #000000;
+
 }
+
 a{
     text-decoration: none;
     text-transform: uppercase;
+    color:#000;
 }
-.navigation li:last-child {
-    border: none;
-}
+
 .image2{
     float: left;
     width: 208px;
@@ -113,6 +110,7 @@ a{
 .header1{
     margin: 10px;
 }
+a
 .info{
     font-size: 16px;
     margin: 17px 0px 0px 10px;
@@ -122,58 +120,36 @@ a{
     font-size: 25px;
     margin: 10px;
 }
-.facts{
-    margin: 15px 0px 0px 26px;
-  text-decoration: dotted;
+ul.facts li {
+    text-decoration: disc;
     line-height: 17px;
-}
-.contact{
-    font-size: 25px;
-    margin: 15px 0px 0px 10px;
-}
-.contactbox input{
-    display: block;
-    margin: 10px;
-}
-.contactbox textarea{
-    display: block;
-    margin: 10px;
-}
-.contactbox label{
-    
-    margin: 10px;
-}
-.contactbox{
-    padding: 36px 16px 16px;
-    border: #000 1px solid;;
-}
+    margin-left: 84px;}
 
-.visit{
-    font-size: 25px;
-    margin-bottom: 31px;
+.facts li {
+    list-style-type: disc;
 }
-.opt{
-    font-size: 18px;
-}
-
-.opt2{
-    font-size: 18px;
-}
-
-.opt3{
-    font-size: 18px;
-}
-
-/* .form-lable{
-    font-size: 18px;
-} */
-#send {
-    background-color: #D4E9E7;
-    border: #000 1px solid;
-    padding: 14px 12px 14px 12px;
-}
-footer{
-    text-align: right;
-    padding-right: 33px;
-    padding-bottom: 38px;
-}
+.validator {
+    margin: 10px 0;
+    text-align: left;
+         padding: 36px 16px 16px; 
+        border: #000 1px solid;
+  }
+  
+  label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;      
+    margin-right: 10px;
+  }
+  
+  input[type="radio"] {
+    display: inline-block;
+    margin-right: 5px; 
+  }
+  footer{
+text-align: right;
+  }
+  .forms{
+    display: flex;
+  
+    flex-direction: column; } 
