@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+i {
+    margin-left: 10px;
+}
+
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222222;
+    padding: 20px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 40px;
+
+}
+
+.navbar-links a {
+    color: #C78B07
+}
+
+.navbar-links .active {
+    display: flex;
+    background-color: #C78B07;
+    color: black;
+    padding: 10px 45px 10px 45px;
+    margin-top: -10px;
+}
+
+/* search */
+.search-bar {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-bar input {
+    height: inherit;
+    width: auto;
+}
+
+.search-bar button {
+    background-color: #222222;
+    color: orange;
+    border: 1px solid orange;
+    height: inherit;
+    width: 30px;
+}
+
+.search-bar i {
+    margin: 0;
+    width: max-content;
+}
+
+/* home section */
+.home {
+    background-image: url('images/main-banner.jpg');
+    height: fit-content;
+    width: fit-content;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.home .bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 4px 10px 4px 10px;
+}
+
+.home .contrastColor {
+    padding: 50px 70px 50px 70px;
+}
+
+.home h1 {
+    padding: 0;
+    margin-bottom: 5px;
+    font-size: 70px;
+    font-weight: 900;
+    color: white;
+}
+
+.home .content {
+    color: white;
+}
+
+
+.home button {
+    background-color: #C78B07;
+    border: none;
+    padding: 20px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* about section */
+.about {
+    display: flex;
+}
+
+.about-bg {
+    background-color: #FFE6AC;
+    padding: 5px 70px 5px 70px;
+}
+
+.about img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.about h1,
+.service-main h1,
+.our-vision h1,
+.our-team h1,
+.contact-us h1 {
+    font-size: 40px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+.about .content {
+    width: 100%;
+    font-size: 14px;
+    height: auto;
+    margin: 10px;
+}
+
+/* our service section */
+#servicesSection {
+    padding: 5px 70px 5px 70px;
+
+}
+
+.service-main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+
+.services-1,
+.services-2 {
+    width: 100%;
+    display: flex;
+}
+
+.service-item {
+    background-color: #FFE6AC;
+    object-fit: cover;
+    width: 50%;
+    margin: 5px 10px 10px 0px;
+}
+
+.service-item img {
+    padding: 0;
+    width: 100%;
+}
+
+.service-item .content {
+    padding: 10px;
+}
+
+.service-item p {
+    font-size: 12px;
+}
+
+.service-main button {
+    background-color: #222222;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 20px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 0px;
+    cursor: pointer;
+}
+
+/* our vision */
+.vision-img {
+    background-image: url('images/vision.jpg');
+    background-position: center;
+    background-size: cover;
+    display: inline-flex;
+}
+
+.our-vision .content {
+    color: white;
+    padding: 10px 70px 10px 70px;
+
+}
+
+.our-vision button {
+    background-color: #112034;
+    color: white;
+    border: 1px solid #A3750E;
+    padding: 20px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.our-vision .content {
+    font-size: 12px;
+}
+
+/* our team */
+
+#teamSection {
+    padding: 10px 50px 5px 70px;
+}
+
+.our-team {
+    width: 98%;
+}
+
+.our-team h1 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.our-team .team1,
+.our-team .team2 {
+    width: 100%;
+    display: flex;
+}
+
+.our-team .team1 .content,
+.our-team .team2 .content {
+    background-color: #FFE6AC;
+    padding: 20px;
+    width: 50%;
+}
+
+.our-team .team1 img,
+.our-team .team2 img {
+    width: 50%;
+}
+
+.our-team .team1 h4,
+.our-team .team2 h4 {
+    border-bottom: 2px solid #DAAA40;
+    margin: 0px 0px 10px 0px;
+    padding: 0;
+}
+
+/* contact section */
+
+#contactSection {
+    padding: 10px 70px 5px 70px;
+}
+
+.contact-us .container {
+    display: flex;
+    padding-top: 10px;
+}
+
+
+.contact-us .container .contact {
+    width: 50%;
+    padding: 0px 10px 0px 0px;
+}
+
+.contact-us .container .contact input,
+.contact-us .container .contact textarea {
+    width: 100%;
+}
+
+.contact-us .container .contact .SendBtn {
+    background-color: #222222;
+    color: #C18708;
+    width: 50px;
+    height: 30px;
+}
+
+.contact-us .container .map .GeoLocation {
+    width: 100%;
+    display: flex;
+}
+
+.hoursOfOperation h1 {
+    padding-bottom: 10px;
+}
+
+.hoursOfOperation table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.hoursOfOperation td,
+.hoursOfOperation th {
+    border: 1px solid black;
+    padding: 12px;
+    font-weight: 600;
+}
+
+
+.hoursOfOperation th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #FFE6AC;
+    color: black;
+
+}
+
+/* footer */
+footer {
+    padding: 20px 50px 10px 70px;
+    background-color: #222222;
+    color: #CE8F07;
+    /* padding: 20px; */
+    width: 100%;
+}
+
+footer a {
+    color: #CE8F07;
+}
+
+/* Adjustments for mobile devices */
+@media only screen and (max-width: 760px) {
+
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo {
+        width: 100%;
+        background: #C78B07;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .navbar-links a {
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar-links .active {
+        border-width: 100%;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+
+    /* Home section */
+    .home {
+        padding: 20px 0px 20px 0px;
+    }
+
+    .home h1 {
+        font-size: 40px;
+    }
+
+    .home .contrastColor {
+        padding: 0;
+        margin: 0;
+    }
+
+    /* About section */
+    .about {
+        flex-direction: column;
+    }
+
+    .about-bg {
+        padding: 20px;
+    }
+
+    .about img {
+        width: 100%;
+    }
+
+
+    /* Services section */
+    #servicesSection {
+        padding: 0px 15px 0px 15px;
+    }
+
+    .service-item {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .services-1,
+    .services-2 {
+        flex-direction: column;
+    }
+
+    /* Vision section */
+    .our-vision .content {
+        padding: 20px;
+    }
+
+    .our-vision button {
+        padding: 15px 25px;
+        margin-top: 20px;
+    }
+
+    /* Our Team section */
+
+    #teamSection {
+        padding: 10px 15px 5px 15px;
+    }
+
+    .our-team .team1,
+    .our-team .team2 {
+        flex-direction: column;
+    }
+
+    .our-team .team1 img,
+    .our-team .team2 img {
+        width: 100%;
+    }
+
+    .our-team .team1 .content,
+    .our-team .team2 .content {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .our-team .team2 {
+        flex-direction: column-reverse;
+    }
+
+    /* Contact section */
+    #contactSection {
+        padding: 20px;
+    }
+
+    .contact-us .container {
+        flex-direction: column;
+    }
+
+    .contact-us .container .contact,
+    .contact-us .container .map {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-us .container .map .GeoLocation {
+        width: 100%;
+    }
+
+    .hoursOfOperation {
+        margin-bottom: 20px;
+        flex-direction: column-reverse;
+    }
+
+    .hoursOfOperation h1 {
+        padding-bottom: 10px;
+    }
+
+    .hoursOfOperation table {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hoursOfOperation td,
+    .hoursOfOperation th {
+        padding: 8px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px;
+    }
+}
